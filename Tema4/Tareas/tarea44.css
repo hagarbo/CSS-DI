@@ -1,0 +1,37 @@
+#cabecera{
+    background-color: #ccc;
+    border: 1px solid #093;
+    margin: 10px 12px 20px 15px;
+    padding: 10px;
+}
+#contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #8aecf9;
+    border: 1px solid #093;
+    margin: 10px 12px 20px 15px;
+    padding: 10px;
+}
+#contenido article{
+    background-color: #F8D595;
+    border: 1px solid #093;
+    min-width: 30%;
+    margin: 10px 12px 20px 15px;
+    padding: 10px;
+}
+#piepagina{
+    background-color: #95FAC6;
+    border: 1px solid #093;
+    margin: 10px 12px 20px 15px;
+    padding: 10px;
+}
+.textorojo{
+    color:red;
+}
+.textonegrita{
+    font-weight: bold;
+}
+.textocursiva{
+    font-style: italic;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: antiquewhite;
+            display: grid;
+            /*grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-columns: [inicio] 100px [centro] auto [final];*/
+            grid-template-columns: 100px 200px auto;
+
+            grid-template-rows: repeat(2,45px);
+            grid-template-rows: 50px 100px auto;
+
+            gap: 10px 20px;
+
+            /* distribucion del espacio disponible */
+            justify-content: center;
+            height: 350px; /*se define la altura para que se vea el efecto de alineacion de las filas con el spacebetween*/
+            align-content: space-between;
+            justify-items: end;
+            align-items: start;
+            place-items: start end; /* equivalente a las 2 lineas anteriores */
+        }
+        .item {
+            border-radius: 5px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .item:nth-child(3n+1) {
+            background-color: aqua;
+        }
+        .item:nth-child(3n+2) {
+            background-color: lightcoral;
+        }
+        .item:nth-child(3n+3) {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
+</body>
+</html>

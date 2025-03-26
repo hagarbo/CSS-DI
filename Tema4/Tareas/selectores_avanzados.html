@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            width: 50px;
+            text-align: center;
+        }
+        /* Selectores de atributos */
+        a[href$=".rar"]{
+                color: orange;
+                text-decoration: underline;
+        }
+        a[href$=".rar"]::before{
+            content: "💊";
+        }
+        a[href^="https://"]{
+            color: green;
+            text-decoration: none;
+        }
+        a[href^="https://"]::after{
+            content: "🔗";
+        }
+        /* Selectores jerárquicos */
+        ul > li {
+            color: brown;
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: normal;
+        }
+        tr > td{
+            background-color: lightyellow
+        }
+        /* Pseudo-clases */
+        li:nth-child(1){
+            color: blue;
+            font-weight: bold;
+        }
+        li:nth-child(odd){
+            background-color: lightgreen;
+        }
+        li:nth-child(even){
+            background-color: lightgray;
+        }
+        input:focus{
+            border: 5px solid red;
+        }
+        /* Pseudo-elementos */
+        h1::before,h2::before{
+            content: "(*)";
+            color: green;
+        }
+        #obligatorio::after{
+            content: "(Campo obligatorio)";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Probando selectores avanzados en CSS</h1>
+    <h2>Adrian Garcia Bouzas</h2>
+    <br>
+    <p>Lorem fistrum hasta luego Lucas caballo blanco caballo negroorl jarl jarl por la gloria de mi madre mamaar ese que llega. Está la cosa muy malar al ataquerl no te digo trigo por no llamarte Rodrigor hasta luego Lucas me cago en tus muelas no puedor a wan. Benemeritaar qué dise usteer a wan llevame al sircoo pupita no puedor. A peich pecador sexuarl condemor fistro no puedor mamaar. Pecador ese pedazo de a wan por la gloria de mi madre a wan no te digo trigo por no llamarte Rodrigor ese que llega caballo blanco caballo negroorl. Jarl benemeritaar te voy a borrar el cerito hasta luego Lucas.</p>
+    <br>
+    <h3>Ingredientes para la pizza de pepperoni</h3>
+    <ul>
+        <li class="item1">250g de harina de fuerza</li>
+        <li class="item2">5g de levadura fresca</li>
+        <li class="item3">5ml de aceite de oliva</li>
+        <li class="item4">150g de mozarella</li>
+        <li class="item5">80g de pepperoni</li>
+        <li class="item6">Orégano y sal</li>
+    </ul>
+
+    <br>
+    <h3>Enlaces</h3>
+    <div><a href="archivo.rar">Pincha aquí para descargar el fichero RAR</a></div>
+    <div><a href="https://www.google.com">Pincha aquí para ir a Google</a></div>
+
+    <br>
+    <h3>Tabla de numeros</h3>
+    <table>
+        <tr class="row">
+            <td class="column">1</td>
+            <td class="column">2</td>
+            <td class="column">3</td>
+        </tr>
+        <tr class="row">
+            <td class="column">4</td>
+            <td class="column">5</td>
+            <td class="column">6</td>
+        </tr>
+        <tr class="row">
+            <td class="column">7</td>
+            <td class="column">8</td>
+            <td class="column">9</td>
+        </tr>
+    </table>
+
+    <br>
+    <h3>Formulario</h3>
+    <form action="" method="get">
+        <div id="obligatorio">
+            <input type="text">
+        </div>
+        <br>
+        <div>
+            <button>Enviar</button>
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        @font-face {
+            font-family: 'Playwrite';
+            font-style: normal;
+            font-weight: 400;
+            font-stretch: normal;
+            font-display: swap;
+            unicode-range: U+00-52F, U+1E00-1FFF, U+2200-22FF;
+            src: url('fonts/Playwrite/static/PlaywriteIN-Regular.ttf') format('truetype');
+        }
+        @media screen {
+            body {
+            font-family: 'Playwrite','open-sans','Arial';
+            background-color: lightgrey;
+            }
+            h1 {
+                color: #115AA2;
+                text-align: center;
+            }
+            h2 {
+                color: #117FCE;
+                text-align: center;
+            }
+        }
+        
+        @media print {
+            body {
+                font-family: 'Arial';
+                text-align: justify;
+            }
+            .titulo {
+                page-break-after: always;
+            }
+            h1 {
+                text-align: center;  
+            }
+            h2 {
+                text-align: center;
+            }
+
+            @page {
+                size: A5 landscape;
+                margin: 10mm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Página con Estilo Personalizado</h1>
+    <h2>Subtítulo de la Página</h2>
+    <p>Esta es una página de ejemplo  que utiliza una fuente personalizada aplicada a todos los elementos del documento. Además, incluye estilos diferentes para impresión, con una configuración específica para un documento en tamaño A5 y orientación horizontal. Aquí demostraremos  cómo se pueden adaptar el diseño de un sitio web para diferentes medios</p>
+    <h1>Lista Ordenada</h1>
+    <ol type="I">
+        <li>Elemento uno</li>
+        <li>Elemento dos</li>
+        <li>Elemento tres</li>
+        <li>Elemento cuatro</li>
+        <li>Elemento cinco</li>
+    </ol>
+</body>
+</html>

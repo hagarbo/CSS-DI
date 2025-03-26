@@ -1,0 +1,17 @@
+h1.rojo{
+    color: red;
+}
+
+h2.verde{
+    color: green;
+}
+
+.negrita{
+    font-weight: bold;
+}
+.cursiva{
+    font-style: italic;
+}
+.azul{
+    color: blue;
+}

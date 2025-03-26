@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    font-family: sans-serif;
+    box-shadow: 3px 3px 10px 5px grey;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.titulo{
+    flex:1;
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.cuerpo{
+    flex:2;
+    padding: 10px 35px 10px 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cuerpo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.cuerpo p{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+.pie{
+    flex:1;
+    background-color: #F1F1F1;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie button{
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    margin: 25px 0px 25px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}

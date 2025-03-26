@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+            font-size: 50px;
+            flex-wrap: wrap;
+        }
+        .emoji{
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+        .diamante{
+            background-color: pink;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+        .circulo{
+            background-color: #80D4FF;
+            clip-path: circle(50% at 50% 50%);
+        }
+        .ellipse-container{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+        }
+        .outer-ellipse{
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            background-color: green;
+            clip-path: ellipse(50% 26%);
+        }
+        .inner-ellipse{
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 140px;
+            height: 140px;
+            background-color: yellow;
+            clip-path: ellipse(50% 25%);
+        }
+        .triangulo{
+            align-items: end;
+            background-color: #ADFF2F;
+            clip-path: polygon(50% 15%, 100% 100%, 0% 100%);
+        }
+        .trapecio{
+            background-color: orange;
+            clip-path: polygon(25% 10%, 75% 10%, 100% 80%, 0% 80%);
+        }
+        .forma-svg{
+            background-color: yellowgreen;
+            /*clip-path: url(assets/asset.svg)*/
+            mask-image: url(assets/nube.svg);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="emoji diamante">
+        😁
+    </div>
+    <div class="emoji circulo">
+        🎉
+    </div>
+    <div class="ellipse-container">
+        <div class="outer-ellipse"></div>
+        <div class="inner-ellipse emoji">👽</div>
+    </div>  
+    <div class="emoji triangulo">
+        🐌
+    </div>
+    <div class="emoji trapecio">
+        🤖
+    </div>
+    <div class="emoji forma-svg">
+        👺
+    </div>
+</body>
+</html>
