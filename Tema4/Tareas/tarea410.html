@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 4.10</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 100px auto 100px;
+            grid-template-rows: 50px auto 50px;
+            height: 400px;
+
+            /* Definición de las áreas */
+            grid-template-areas: 
+                ". D A"
+                "E C A"
+                "E B .";
+        }
+
+        .areaA{ grid-area: A; background-color: aquamarine;border-top: 4px solid black;border-right: 4px solid black;border-bottom: 4px solid black;}
+        .areaB{ grid-area: B; background-color: aquamarine;border-bottom: 4px solid black;border-right: 4px solid black;}
+        .areaC{ grid-area: C; background-color: white;border: 4px solid black;}
+        .areaD{ grid-area: D; background-color: aquamarine;border-top: 4px solid black;border-left: 4px solid black;}
+        .areaE{ grid-area: E; background-color: aquamarine;border-top: 4px solid black;border-left: 4px solid black;border-bottom: 4px solid black;}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="areaA"></div>
+        <div class="areaB"></div>
+        <div class="areaC"></div>
+        <div class="areaD"></div>
+        <div class="areaE"></div>
+    </div>
+    
+</body>
+</html>
